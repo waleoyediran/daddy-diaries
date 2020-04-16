@@ -5,7 +5,7 @@ module.exports = {
     description: 'Documenting my parenting experience',
     siteUrl: 'https://daddy-diaries.oyewale.me/',
   },
-  pathPrefix: '',
+  pathPrefix: '/',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
