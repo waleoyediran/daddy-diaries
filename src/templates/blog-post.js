@@ -14,7 +14,6 @@ class BlogPostTemplate extends React.Component {
     const domain = get(this.props, 'data.site.siteMetadata.domain')
     const twitterHandle = get(this.props, 'data.site.siteMetadata.twitterHandle')
     const { slug, previous, next } = this.props.pathContext
-      console.log(this.props)
 
     return (
       <div>
