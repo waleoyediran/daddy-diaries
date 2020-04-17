@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "daddy-diaries-blog",
+  "description": "Documenting my parenting experience",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Oyewale Oyediran <waleoyediran@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/waleoyediran/dady-diaries/issues"
   },
   "dependencies": {
     "gatsby": "^1.9.250",
@@ -24,6 +24,7 @@
     "gatsby-transformer-remark": "^1.7.40",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.5",
+    "react-share": "^3.0.0",
     "typeface-merriweather": "0.0.43",
     "typeface-montserrat": "0.0.43",
     "typography-theme-wordpress-2016": "^0.15.10"
@@ -34,15 +35,17 @@
     "gh-pages": "^1.1.0",
     "prettier": "^1.12.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/waleoyediran/daddy-diaries#readme",
   "keywords": [
-    "gatsby"
+    "gatsby",
+    "diaries",
+    "parenting"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/waleoyediran/daddy-diaries.git"
   },
   "scripts": {
     "dev": "gatsby develop",

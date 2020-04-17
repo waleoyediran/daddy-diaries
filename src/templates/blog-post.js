@@ -4,13 +4,17 @@ import Link from 'gatsby-link'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
+import ShareButtons from '../components/ShareButtons'
 import { rhythm, scale } from '../utils/typography'
 
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
-    const { previous, next } = this.props.pathContext
+    const domain = get(this.props, 'data.site.siteMetadata.domain')
+    const twitterHandle = get(this.props, 'data.site.siteMetadata.twitterHandle')
+    const { slug, previous, next } = this.props.pathContext
+      console.log(this.props)
 
     return (
       <div>
@@ -27,6 +31,12 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ShareButtons
+            twitterHandle={`${twitterHandle}`}
+            url={`${domain}${slug}`}
+            title={`${post.frontmatter.title}`}
+            tags={post.frontmatter.tags}
+        />
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -72,6 +82,8 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        domain: siteUrl
+        twitterHandle
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -80,6 +92,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        tags
       }
     }
   }
