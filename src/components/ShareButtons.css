@@ -1,0 +1,11 @@
+.SocialMediaShareButton {
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ShareButtons {
+    padding-bottom: 12px;
+}

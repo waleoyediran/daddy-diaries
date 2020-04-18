@@ -1,6 +1,7 @@
 ---
 title: Attention Demanding Human
 date: "2020-04-14T22:12:03.284Z"
+tags: ["parenting", "new-born"]
 ---
 
 ADH confuses me a whole lot for someone well travelled. I have come to expect that, for someone who spent the first 5 months of his conception in hippy Berlin, 4 months in Toronto and still managed to slip in 2 trips to Nigeria in between, he’d have a decent understanding of how the world works. He expects the entire world to revolve around him. He’s probably right.

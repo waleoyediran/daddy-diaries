@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: 'Daddy Diaries',
     author: 'Oyewale Oyediran',
+    twitterHandle: 'waleoyediran',
     description: 'Documenting my parenting experience',
-    siteUrl: 'https://daddy-diaries.oyewale.me/',
+    siteUrl: 'https://daddy-diaries.oyewale.me',
   },
   pathPrefix: '/',
   plugins: [
