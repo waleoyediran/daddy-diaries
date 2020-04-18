@@ -11,9 +11,9 @@ import './ShareButtons.css';
 
 export const ShareButtons = ({ twitterHandle, url, title, tags }) => (
     <div className="ShareButtons">
-        {/*<FacebookShareButton url={url}>*/}
-            {/*<FacebookIcon size={48} round={true} />*/}
-        {/*</FacebookShareButton>*/}
+        <FacebookShareButton url={url}>
+            <FacebookIcon size={48} round={true} />
+        </FacebookShareButton>
 
         <TwitterShareButton url={url} title={title} via={twitterHandle} hashtags={tags}>
             <TwitterIcon size={48} round={true} />
